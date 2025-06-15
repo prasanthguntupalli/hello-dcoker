@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prasanth Guntupalli - Data Scientist Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 50px;
+            align-items: center;
+        }
+
+        .content {
+            width: 60%;
+        }
+
+        .content h1 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            background: #2980b9;
+            color: white;
+            padding: 6px 12px;
+            margin: 5px 5px 5px 0;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .photo {
+            width: 35%;
+        }
+
+        .photo img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Hi, I'm Prasanth Guntupalli 👋</h1>
+            <p>Welcome to my personal portfolio, built using modern tools:</p>
+            <div>
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Docker</span>
+            </div>
+
+            <div class="section">
+                <h2>💡 About This Webpage</h2>
+                <p>This app is built with <strong>Flask (a Python micro web framework)</strong> and styled using <strong>HTML & CSS</strong>. It's fully containerized using <strong>Docker</strong>, making it portable and consistent across any environment.</p>
+            </div>
+
+            <div class="section">
+                <h2>🧠 What Each Technology Does</h2>
+                <ul>
+                    <li><strong>Python</strong>: Backend programming language</li>
+                    <li><strong>Flask</strong>: Lightweight web framework to serve HTML</li>
+                    <li><strong>HTML & CSS</strong>: Frontend structure and styling</li>
+                    <li><strong>Docker</strong>: Packs everything into a portable container</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>👨‍💻 About Me</h2>
+                <p>I’m <strong>Prasanth Guntupalli</strong>, currently working as a <strong>Data Scientist</strong> with <strong>2.5 years of experience</strong>.</p>
+                <p>I enjoy solving complex challenges in <strong>Java</strong> and <strong>Python</strong>. I've worked on <strong>regression</strong>, <strong>classification</strong>, <strong>NLP</strong>, and <strong>deep learning</strong> models.</p>
+                <p>I have strong knowledge of the <strong>Azure Cloud</strong>, and I’m actively contributing on <a href="https://leetcode.com/" target="_blank">LeetCode</a> and <a href="https://linkedin.com/in/prasanthguntupalli/" target="_blank">LinkedIn</a>.</p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="{{ url_for('static', filename='TshirtRed.jpg') }}" alt="Prasanth Guntupalli">
+        </div>
+    </div>
+</body>
+</html>
